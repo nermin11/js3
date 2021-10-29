@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+    <input type="number" id="number" />
+    <button onclick="calc()">Hesabla</button>
+    <p id="result"></p>
+
+<script>
+    const number = document.getElementById("number");
+    const result = document.getElementById("result");
+
+    function calc(){
+        let kod = "";
+        let n = number.value;
+        for (i = 1; i <= n; i++) {
+            if( n % i == 0) kod += i +  " , " ;
+            
+        }
+        result.innerHTML = kod; 
+    }
+    /*İstifadəçidən ədəd soruşmaq və həmin ədədin bütün 
+        bölənlərini ekranda göstərmək */
+</script>
+</body>
+</html>

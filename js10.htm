@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let min = 0;
+            let max = 100;
+            const tap = rand(min, max);
+            console.log(tap);
+            let x;
+            let mesaj = min + " ilə " + max + " arası ədəd tutmuşam. Ədədi tap. Təxminin?";
+            let cehd = 0;
+            
+            while(x != tap) {
+                x = prompt(mesaj);
+                cehd++;
+                mesaj = cehd + "-inci təxminin düz deyil. Tutduğum ədəd daha " + 
+                        ((tap > x) ? "böyükdür" :
+                        "kiçikdir") + 
+                        ". Bir daha cəhd et."; 
+            }
+
+            alert("Afərin, tutduğum ədədi " + cehd + " dəfədən tapdın");
+
+            function rand(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) ) + min;
+            }
+        </script>
+    </body>
+</html>

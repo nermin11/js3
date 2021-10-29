@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       /* let a = true;
+        let g = 0 ;
+        let day = ""
+
+        while(a) {
+            g = g < 6 ? g+1 : 0;
+            day =   g == 1 ? "bazar ertəsi" :
+                    g == 2 ? "çərşənbə axşamı" :
+                    g == 3 ? "çərşənbə" :
+                    g == 4 ? "cümə axşamı" :
+                    g == 5 ? "cümə" :
+                    g == 6 ? "şənbə" : "bazar";
+            a = confirm ( day + " . Növbəti günü bilmək istəyirsiz?")
+        }*/
+        let day = 0;
+        let a = true;
+        let week = ["bazar ertəsi" , "çərşənbə axşamı" , "çərşənbə" , "cümə axşamı" , "cümə" , "şənbə" , "bazar"]
+        while (a){
+            day = day < 6 ? day + 1 : 0;
+            a = confirm ( week[day] + ' . Növbəti günü bilmək istəyirsiz?')
+
+        }
+    </script>
+</body>
+</html>
